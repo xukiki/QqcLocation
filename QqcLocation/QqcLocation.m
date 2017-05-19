@@ -5,17 +5,17 @@
 //  Created by qiuqinchuan on 16/1/7.
 //  Copyright © 2016年 ZQ. All rights reserved.
 //
-#import "LocationHelper.h"
+#import "QqcLocation.h"
 #import "CCLocationManager.h"
 #import "QqcUtility.h"
 
-@interface LocationHelper()
+@interface QqcLocation()
 
 @property(nonatomic, strong)CLLocationManager* locationmanager;     //定位管理对象
 
 @end
 
-@implementation LocationHelper
+@implementation QqcLocation
 
 #pragma mark - 初始化
 - (CLLocationManager *)locationmanager

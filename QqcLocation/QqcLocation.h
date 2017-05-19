@@ -1,5 +1,5 @@
 //
-//  LocationHelper.h
+//  QqcLocation.h
 //  HybridFramework
 //
 //  Created by qiuqinchuan on 16/1/7.
@@ -11,7 +11,7 @@
 typedef void(^blockGetMyLocation)(EntityLocation* locationInfo);
 typedef void(^blockGetAddress)(NSString* strAddr);
 
-@interface LocationHelper : NSObject
+@interface QqcLocation : NSObject
 
 /**
 *  获取我的定位信息
