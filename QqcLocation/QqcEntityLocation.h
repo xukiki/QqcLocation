@@ -1,5 +1,5 @@
 //
-//  EntityLocation.h
+//  QqcEntityLocation.h
 //  HybridFramework
 //
 //  Created by qiuqinchuan on 15/8/24.
