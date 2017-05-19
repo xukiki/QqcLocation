@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.requires_arc  = true
 
   s.name         = "QqcLocation"
-  s.version      = "1.0.44"
+  s.version      = "1.0.84"
   s.summary      = "QqcLocation"
   s.homepage     = "https://github.com/xukiki/QqcLocation"
   s.source       = { :git => "https://github.com/xukiki/QqcLocation.git", :tag => "#{s.version}" }
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
     ss.source_files = 'QqcLocation/CCLocation/*.{h,m}'
   end
 
-  s.dependency = "QqcUtility"
-  s.dependency = "QqcUtilityUI"
+  s.dependency "QqcUtility"
+  s.dependency "QqcUtilityUI"
 
 end
