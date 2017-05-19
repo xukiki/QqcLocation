@@ -7,7 +7,7 @@
 //
 #import "LocationHelper.h"
 #import "CCLocationManager.h"
-#import "QqcBaseUtility.h"
+#import "QqcUtility.h"
 
 @interface LocationHelper()
 
@@ -36,7 +36,7 @@
  */
 - (void)getMyLocation:(blockGetMyLocation)blockLocation
 {
-    if ([QqcBaseUtility getSystemMainVersion] > 7)
+    if ([QqcUtility getSystemMainVersion] > 7)
     {
         [_locationmanager requestWhenInUseAuthorization];   //NSLocationWhenInUseDescription
     }

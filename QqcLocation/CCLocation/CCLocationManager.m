@@ -5,8 +5,8 @@
 //  Created by WangZeKeJi on 14-12-10.
 //  Copyright (c) 2014年 Chen Yaoqiang. All rights reserved.
 //
-#import "QqcBaseUtility.h"
-#import "QqcBaseUtilityUI.h"
+#import "QqcUtility.h"
+#import "QqcUtilityUI.h"
 #import "CCLocationManager.h"
 #import "CLLocation+YCLocation.h"
 @interface CCLocationManager (){
@@ -122,7 +122,7 @@
         _manager.delegate=self;
         _manager.desiredAccuracy = kCLLocationAccuracyBest;
 
-        if ([QqcBaseUtility getSystemMainVersion] > 7)
+        if ([QqcUtility getSystemMainVersion] > 7)
         {
             [_manager requestWhenInUseAuthorization];   //NSLocationWhenInUseDescription
         }
@@ -132,7 +132,7 @@
     }
     else
     {
-        if ([QqcBaseUtility getSystemVersion] >= 8) {
+        if ([QqcUtility getSystemVersion] >= 8) {
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:@"需要开启定位服务,到设置->隐私,打开定位服务" preferredStyle:UIAlertControllerStyleAlert];
             
             UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
@@ -143,7 +143,7 @@
             [alertController addAction:cancelAction];
             [alertController addAction:okAction];
             
-            [[QqcBaseUtilityUI getCurrentVC] presentViewController:alertController animated:YES completion:nil];
+            [[QqcUtilityUI getCurrentVC] presentViewController:alertController animated:YES completion:nil];
         }else{
             //iOS8以下的系统只给出提示，无法跳转到对应的设置界面
             UIAlertView *alvertView=[[UIAlertView alloc]initWithTitle:@"提示" message:@"需要开启定位服务,请到设置->隐私,打开定位服务" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
