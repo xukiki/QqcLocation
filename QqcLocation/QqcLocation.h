@@ -6,7 +6,7 @@
 //  Copyright © 2016年 ZQ. All rights reserved.
 //
 
-#import "EntityLocation.h"
+#import "QqcEntityLocation.h"
 
 typedef void(^blockGetMyLocation)(EntityLocation* locationInfo);
 typedef void(^blockGetAddress)(NSString* strAddr);
